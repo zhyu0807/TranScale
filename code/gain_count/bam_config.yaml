@@ -1,0 +1,22 @@
+samples_file: "/public1/home/a8s000332/data_space/RNA_zy/spikein/9_code/clean_sample.txt"  
+#本配置文件用于生成基于STAR比对的bam文件
+# 该配置文件包含了样本信息、参考文件路径、工具特定参数
+# 参考文件路径
+reference:
+  genome: "/public1/home/a8s000332/data_space/RNA_zy/spikein/88_ref/merged_reference.fa"
+  annotation: "/public1/home/a8s000332/data_space/RNA_zy/spikein/88_ref/merged_annotation.gtf"
+  star_index_dir: "/public1/home/a8s000332/data_space/RNA_zy/spikein/88_ref"
+
+# 工具特定参数
+star:
+  overhang: 149
+
+qualimap:
+  java_mem: "32G"   
+
+# 线程配置
+threads:
+  star_index: 16
+  star_align: 8
+
+  
