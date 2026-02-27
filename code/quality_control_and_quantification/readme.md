@@ -104,3 +104,18 @@ Output Enrichment:
 Generates genome-coordinate BAM files (--star-output-genome-bam) for visualization.
 Uses --append-names to include gene and transcript names alongside IDs in the final output files for better interpretability.
 High-Performance Computing: Optimized with multi-threading (--num-threads 16) for rapid batch processing of multiple samples.
+
+9.Dependencies & Requirements
+To ensure reproducibility and compatibility, please ensure the following software and libraries are installed.
+  Core Workflow & Scripting
+    （1）Python (>= 3.8)
+    （2）Snakemake (>= 8.30.0) - For workflow orchestration.
+    （3）Bash - For executing .sh quantification scripts.
+  Bioinformatics Tools(Current version)
+    （1）fastp (= 0.24.0) - FastQ preprocessing and adapter trimming.
+    （2）FastQC (= 0.12.1) - Raw sequencing data quality assessment.
+    （3）STAR (= 2.7.11b) - High-performance genome alignment.
+    （4）Samtools (= 1.23) - BAM file manipulation and indexing.
+    （5）Qualimap (= 2.3) - Post-alignment RNA-seq QC metrics (Requires Java).
+    （6）RSEM (= 1.3.1) - Isoform/gene-level expression quantification.
+    （7）featureCounts (= 2.1.1) - Genomic feature quantification.
