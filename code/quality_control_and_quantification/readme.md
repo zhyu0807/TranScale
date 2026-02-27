@@ -106,7 +106,7 @@ Uses --append-names to include gene and transcript names alongside IDs in the fi
 High-Performance Computing: Optimized with multi-threading (--num-threads 16) for rapid batch processing of multiple samples.
 
 9.Dependencies & Requirements
-To ensure reproducibility and compatibility, please ensure the following software and libraries are installed.
+To ensure reproducibility and compatibility, please ensure the following software and libraries are installed.  
   Core Workflow & Scripting
     （1）Python (>= 3.8)
     （2）Snakemake (>= 8.30.0) - For workflow orchestration.
